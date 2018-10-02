@@ -5,6 +5,7 @@ import GuessList from './guess-list';
 
 describe('<GuessList  />', () => {
   it('Renders without crashing', () => {
+// why does this get guesses{[]}?
     shallow(<GuessList guesses={[]} />);
   });
   it('Renders a list of guesses', () => {
