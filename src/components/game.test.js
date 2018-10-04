@@ -8,4 +8,6 @@ describe('<Game />', () => {
     shallow(<Game />);
   });
 });
-//lots todo
+//Can start a new game 
+//Can make guesses 
+//Can generate aural updates
