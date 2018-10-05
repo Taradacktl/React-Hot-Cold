@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: P30Ta/UAGhLDHa5kqHYaqJH54TbJm39x5vQLc+DZL/z9sa4D7ikPVIHRIeoOaPv1tWBUedg3e2qgTNvL4K2GgoqGuCdpKZTEoa5YBTmqNteiDfYvLmFIFyDAXfsqadZWXLIO5tuWZBUUsR3JheHWEF6RnrTqBuqhdYJIcqAKH9bBSSrGdwZmK8mjgh9a8khxGcLgITxQtpfFuAH8cSIdXzJSRNyG/xtPp6IVRpuukx942IDB6t5f0uZJHOFRKtU+4Tag3OG+KYGXlr16hFzM3vP3XxAUZ8N3hD1CGCSJ7qWovUGA+i0+TFhtIglMNSQOp8N47M0z7Vht5cfwcXbEDrL36MMf7I/KFj/uUyBU5wrHGUO5UC3gA4VPR5H9dlElFBA2KirJhxRARGmy+26Jh4NLKaPx3cROEcwvVZKIqKSx3cx9dpczIkdI7F9YRL+KkiOlOVyizToULZ+tDiCDuD5tIfOmkJZ0Hxc9ced0KowBEEKkRAf8YUJta/hUe4PlpnEyWFU5RUJ6ZC+A+71d46YP3zYauRZAJHHUPxLKMiRIgaIGraGkUJleK+42BASfg6sbT4OQqLv4r2jzaIaFhmyS1BZIoY5GcZdiPDoFbs0D5sCTa9Gl+ZbMvHMU5FJ889HJ17G0sl69t9Q70R3OViIvnbU4cGcl/K6R9aOriGY=
+  app: React-Hot-Cold
+  on:
+    repo: Taradacktl/React-Hot-Cold
